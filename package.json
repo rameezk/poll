@@ -1,0 +1,11 @@
+{
+  "name": "poll",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rameezk/poll.git",
+  "author": "Rameez Khan",
+  "license": "MIT",
+  "devDependencies": {
+    "shadow-cljs": "^2.11.22"
+  }
+}
