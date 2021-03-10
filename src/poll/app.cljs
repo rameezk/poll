@@ -31,6 +31,13 @@
            [:div.buttons.is-centered
             [:button.button.is-success "Save"]
             [:button.button.is-info "Add Choice"]]]]]]]]]]
+   [:div.section
+    [:div.container
+     [:div.columns.is-centered
+      [:div.colum
+       [:div.buttons.is-centered
+        [:button.button.is-success "Publish"]
+        [:button.button.is-info "Add Another Poll"]]]]]]
    [:footer [version]]])
 
 (defn mount-reagent []
