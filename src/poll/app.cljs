@@ -11,33 +11,8 @@
 (defn app []
   [:div.section
    {:style {:height "100vh"}}
-   [:div.container
-    [:div.columns.is-centered
-     [:div.column.is-half
-      [:article.panel.is-primary
-       [:p.panel-heading #_"What do you think the price of bananas are?"
-        [:div.control
-         [:input.input {:type "text" :placeholder "What is your question?"}]]]
-       [:div.panel-block
-        [:div.control
-         [:input.input.is-expanded {:type "text" :placeholder "Choice 1"}]]]
-       [:div.panel-block
-        [:div.control
-         [:input.input.is-expanded {:type "text" :placeholder "Choice 2"}]]]
-       [:div.panel-block
-        [:div.container
-         [:div.columns.is-centered
-          [:div.column
-           [:div.buttons.is-centered
-            [:button.button.is-success "Save"]
-            [:button.button.is-info "Add Choice"]]]]]]]]]]
-   [:div.section
-    [:div.container
-     [:div.columns.is-centered
-      [:div.colum
-       [:div.buttons.is-centered
-        [:button.button.is-success "Publish"]
-        [:button.button.is-info "Add Another Poll"]]]]]]
+   [c/polls]
+   [c/main-controls]
    [:footer [version]]])
 
 (defn mount-reagent []
