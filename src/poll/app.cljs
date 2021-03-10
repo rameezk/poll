@@ -20,16 +20,17 @@
          [:input.input {:type "text" :placeholder "What is your question?"}]]]
        [:div.panel-block
         [:div.control
-         [:input.input.is-expanded {:type "text" :placeholder "Options 1"}]]]
+         [:input.input.is-expanded {:type "text" :placeholder "Choice 1"}]]]
        [:div.panel-block
         [:div.control
-         [:input.input.is-expanded {:type "text" :placeholder "Options 2"}]]]
+         [:input.input.is-expanded {:type "text" :placeholder "Choice 2"}]]]
        [:div.panel-block
         [:div.container
          [:div.columns.is-centered
           [:div.column
            [:div.buttons.is-centered
-            [:button.button.is-success "Save"]]]]]]]]]]
+            [:button.button.is-success "Save"]
+            [:button.button.is-info "Add Choice"]]]]]]]]]]
    [:footer [version]]])
 
 (defn mount-reagent []
